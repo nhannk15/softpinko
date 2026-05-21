@@ -334,6 +334,131 @@
 }
 /* End Header Scroll Effect */
 
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+/* End Hamburger Button */
+
+/* Responsive - Tablet & Mobile */
+@media (max-width: 991px) {
+    .header {
+        top: 10px;
+    }
+
+    .header .inner-main {
+        padding: 15px 20px;
+        border-radius: 30px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .inner-menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 10px 30px rgb(0, 0, 0, 0.12);
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    .inner-menu.open {
+        display: block;
+    }
+
+    .inner-menu ul {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .inner-menu ul li {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    .inner-menu ul li a {
+        display: block;
+        padding: 10px 25px;
+    }
+
+    .section-two {
+        margin-top: -80px;
+    }
+
+    .section-two .inner-box {
+        margin-bottom: 20px;
+    }
+
+    .section-five .inner-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-one .inner-wrap .inner-title {
+        font-size: 24px;
+    }
+
+    .section-two {
+        margin-top: 60px;
+    }
+
+    .section-three .inner-image,
+    .section-four .inner-image {
+        margin-bottom: 30px;
+    }
+
+    .section-three .inner-content .inner-title,
+    .section-four .inner-content .inner-title {
+        font-size: 22px;
+    }
+
+    .section-six .inner-box {
+        margin-bottom: 25px;
+    }
+
+    .section-seven .inner-box {
+        margin-bottom: 25px;
+    }
+}
+/* End Responsive */
+
 /* Section Seven */
 .section-seven{
     background-color: #F2F2FE;
