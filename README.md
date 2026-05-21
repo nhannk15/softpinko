@@ -1,4 +1,4 @@
-# Bai14 - Softy Pinko Landing Page
+Softy Pinko Landing Page
 
 A static landing page built with HTML, CSS, and vanilla JavaScript using Bootstrap 4. Practice project from the 28Tech Front-End course.
 
